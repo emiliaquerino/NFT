@@ -6,57 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | NFT preview card component</title>
-  <style>
-    .image-container {
-      position: relative; /* Posicionamento relativo para permitir posicionamento absoluto dos filhos */
-      width: 300px; /* Define a largura do contêiner da imagem */
-      height: 200px; /* Define a altura do contêiner da imagem */
-      overflow: hidden; /* Evita que o conteúdo exceda os limites do contêiner */
-    }
-
-    .blur-image {
-      width: 100%; /* A imagem preenche 100% da largura de seu contêiner */
-      height: 100%; /* A imagem preenche 100% da altura de seu contêiner */
-      transition: filter 0.3s ease-out; /* Suaviza a transição do filtro aplicado à imagem */
-    }
-
-    .overlay {
-      position: absolute; /* Posiciona o elemento sobre a imagem */
-      top: 0; /* Alinha o topo do elemento com o topo do seu contêiner */
-      left: 0; /* Alinha o lado esquerdo do elemento com o lado esquerdo do seu contêiner */
-      width: 100%; /* O elemento de sobreposição cobre 100% da largura do contêiner */
-      height: 100%; /* O elemento de sobreposição cobre 100% da altura do contêiner */
-      background: rgba(0, 0, 255, 0.5); /* Fundo azul com transparência */
-      transition: background-color 0.3s ease-out; /* Suaviza a transição da cor de fundo */
-      display: flex; /* Utiliza Flexbox para alinhar filhos (ícone do olho) */
-      align-items: center; /* Centraliza os filhos verticalmente dentro do contêiner */
-      justify-content: center; /* Centraliza os filhos horizontalmente dentro do contêiner */
-    }
-
-    .eye-icon {
-      width: 50px; /* Define a largura do ícone do olho */
-      height: 50px; /* Define a altura do ícone do olho */
-      background-image: url('images/icon-view.svg'); /* Define a imagem de fundo como o ícone do olho */
-      background-size: cover; /* Faz com que a imagem de fundo cubra todo o espaço disponível */
-      transition: opacity 0.3s ease-out; /* Suaviza a transição da opacidade */
-    }
-
-    .image-container:hover .blur-image {
-      filter: none; /* Remove o filtro de desfoque quando o mouse está sobre o contêiner da imagem */
-    }
-
-    .image-container:hover .overlay {
-      background: rgba(0, 0, 255, 0); /* Muda a cor de fundo para transparente quando o mouse está sobre o contêiner */
-    }
-
-    .image-container:hover .eye-icon {
-      opacity: 0; /* O ícone do olho fica completamente transparente quando o mouse está sobre o contêiner */
-    }
-  </style>
 </head>
 
 <body>
