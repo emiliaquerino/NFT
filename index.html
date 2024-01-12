@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
 
-  <title>Frontend Mentor | NFT preview card component</title>
-</head>
-
-<body>
-  <div class="image-container"> <!-- Contêiner que envolve a imagem e a sobreposição -->
-    <img src="images/image-equilibrium.jpg" alt="Original Image" class="blur-image">     <!-- A imagem real que será exibida. Inicialmente com desfoque. -->
-    <div class="overlay">  <!-- Div sobreposta à imagem, inicialmente com fundo azul semi-transparente -->
-      <div class="eye-icon"></div>  <!-- O ícone do olho que aparece no centro da sobreposição. Desaparece quando o mouse passa sobre. -->
+  <body>
+    <div class="content">
+      <div class="card">
+        <div class="image-container">
+          <img
+            src="images/image-equilibrium.jpg"
+            alt="Original Image"
+            class="blur-image"
+          />
+          <div class="overlay">
+            <!-- Div sobreposta à imagem, inicialmente com fundo azul semi-transparente -->
+            <div class="eye-icon"></div>
+            <!-- O ícone do olho que aparece no centro da sobreposição. Desaparece quando o mouse passa sobre. -->
+          </div>
+        </div>
+      </div>
+      <h1>Equilibrium #3429</h1>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
