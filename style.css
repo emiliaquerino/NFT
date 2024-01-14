@@ -1,5 +1,6 @@
 body {
   background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
 }
 
 h1 {
@@ -11,29 +12,30 @@ p {
   color: hsl(215, 32%, 27%);
 }
 
-font-family: "Outfit", sans-serif;
-
 .content {
   display: flex;
   justify-content: center;
   background-color: hsl(216, 50%, 16%);
   width: 400px;
   height: 600px;
+  border-radius: 15px;
 }
 
 .card {
-  width: 300px; /* Define a largura do contêiner da imagem */
-  /* Define a altura do contêiner da imagem */
+  width: 300px;
+  height: 100px;
+  background-color: hsl(216, 50%, 16%);
 }
 
 .image-container {
   position: relative;
+  border-radius: 15px;
 }
 
 .blur-image {
   width: 100%; /* A imagem preenche 100% da largura de seu contêiner */
   transition: filter 0.3s ease-out; /* Suaviza a transição do filtro aplicado à imagem */
-}
+  border-radius: 15px;}
 
 .overlay {
   position: absolute; /* Posiciona o elemento sobre a imagem */
@@ -47,6 +49,7 @@ font-family: "Outfit", sans-serif;
   display: flex; /* Utiliza Flexbox para alinhar filhos (ícone do olho) */
   align-items: center; /* Centraliza os filhos verticalmente dentro do contêiner */
   justify-content: center; /* Centraliza os filhos horizontalmente dentro do contêiner */
+  border-radius: 15px;
 }
 
 .eye-icon {
@@ -75,8 +78,20 @@ font-family: "Outfit", sans-serif;
 }
 
 .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
   
 }
 
 .creator {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+
+}
+.creator img {
+  border: 1px solid white;
+  border-radius: 50%;
 }
