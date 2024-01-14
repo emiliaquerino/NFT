@@ -9,21 +9,27 @@ h1 {
 }
 
 p {
-  color: hsl(215, 32%, 27%);
+  color: hsl(215, 51%, 70%);
+}
+
+hr {
+  border-color: hsl(215, 51%, 70%);
 }
 
 .container {
   position: absolute;
   display: flex;
   justify-content: center;
-  background-color: hsl(216, 50%, 16%);
   width: 20%;
-  border-radius: 15px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.card {
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
+  background-color: hsl(216, 50%, 16%);
 }
 
 .image-container {
@@ -47,8 +53,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 15px; /* Ajuste o raio do border-radius para coincidir com o da image-container */
-  background: rgba(0, 0, 255, 0); /* Fundo inicialmente transparente */
+  border-radius: 15px;
+  background: rgba(0, 0, 255, 0);
 }
 
 .image-container .eye-icon {
@@ -56,20 +62,15 @@ p {
   height: 50px;
   background-image: url("images/icon-view.svg");
   transition: opacity 0.3s ease-out;
-  opacity: 0; /* Ícone do olho inicialmente transparente */
+  opacity: 0;
 }
 
 .image-container:hover .overlay {
-  background: rgba(
-    0,
-    0,
-    255,
-    0.5
-  ); /* Adiciona a cor de fundo azul com transparência ao passar o mouse */
+  background: rgba(0, 0, 255, 0.5);
 }
 
 .image-container:hover .eye-icon {
-  opacity: 1; /* Torna o ícone do olho visível ao passar o mouse */
+  opacity: 1;
 }
 
 .info {
@@ -79,12 +80,29 @@ p {
   margin: 10px;
 }
 
-.creator {
+.ethereum, .clock {
+  display: flex;
+  align-items: center;
+}
+
+.ethereum p {
+  color: hsl(178, 100%, 50%);
+}
+
+.ethereum img,
+.clock img {
+  margin-right: 10px;
   display: flex;
   justify-content: space-between;
-  margin: 10px;
 }
-.creator img {
+
+.avatar {
   border: 1px solid white;
+  margin-right: 10px;
   border-radius: 50%;
+}
+
+.info, .content {
+  display: flex;
+  align-items: center;
 }
