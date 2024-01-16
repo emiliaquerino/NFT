@@ -3,8 +3,9 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
-h1 {
+h2{
   display: flex;
+  text-align: left;
   color: hsl(0, 0%, 100%);
 }
 
