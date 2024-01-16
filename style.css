@@ -4,9 +4,13 @@ body {
 }
 
 h2{
+  color: hsl(0, 0%, 100%);
+}
+
+.title {
   display: flex;
   text-align: left;
-  color: hsl(0, 0%, 100%);
+  width: 100%;
 }
 
 p {
