@@ -13,6 +13,7 @@ p {
 }
 
 hr {
+  width: 100%;
   border-color: hsl(215, 51%, 70%);
 }
 
@@ -40,8 +41,8 @@ hr {
   align-items: center;
   position: relative;
   object-fit: cover;
-  height: 235px;
-  width: 230px;
+  height: 100%;
+  width: 100%;
   border-radius: 15px;
 }
 
